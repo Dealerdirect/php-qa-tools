@@ -7,13 +7,13 @@
     "qa", "quality", "code quality",
     "stylecheck", "unittest"
   ],
-  "homepage": "",
+  "homepage": "http://workingatdealerdirect.eu",
   "license": "MIT",
   "authors": [
     {
       "name": "Franck Nijhof",
       "email": "f.nijhof@dealerdirect.nl",
-      "homepage": "http://workingatdealerdirect.nl",
+      "homepage": "http://workingatdealerdirect.eu",
       "role": "Developer"
     }
   ],
