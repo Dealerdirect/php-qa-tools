@@ -1,5 +1,12 @@
 # Dealerdirect: PHP Quality Assurance Tools
 
+[![Travis](https://img.shields.io/travis/DealerDirect/php-qa-tools.svg?style=flat-square)](https://travis-ci.org/DealerDirect/php-qa-tools)
+[![Dependency Status](https://www.versioneye.com/user/projects/580939a4d65a77002f5eab70/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/580939a4d65a77002f5eab70)
+[![Packagist](https://img.shields.io/packagist/dt/dealerdirect/qa-tools.svg?style=flat-square)](https://packagist.org/packages/dealerdirect/qa-tools)
+![Maintenance](https://img.shields.io/maintenance/yes/2016.svg?style=flat-square)
+![Awesome](https://img.shields.io/badge/awesome%3F-yes-brightgreen.svg?style=flat-square)
+[![License](https://img.shields.io/github/license/dealerdirect/php-qa-tools.svg?style=flat-square)](https://github.com/DealerDirect/php-qa-tools)
+
 *“If you don’t have time to do it right you must have time to do it over.”*
 
 This is essentially a Composer meta package, creating a fast, easy and
@@ -9,11 +16,15 @@ convenient way of installing all PHP Quality Assurance tools.
 
 You'll get the following tools by depending on this package:
 
+* **[PHP_CodeSniffer]**: Detects violations of a defined set of coding standards
 * **[PHPMD]**: PHP Mess Detector
 * **[PHPUnit]**: Testing framework for PHP
+* **[SensioLabs Security Checker]**: Checks for dependencies with known security vulnerabilities
 
-[PHPMD]: https://phpmd.org/
-[PHPUnit]: https://phpunit.de/
+[PHP_CodeSniffer]: https://github.com/squizlabs/PHP_CodeSniffer
+[PHPMD]: https://phpmd.org
+[PHPUnit]: https://phpunit.de
+[SensioLabs Security Checker]: https://security.sensiolabs.org/
 
 ## Contributing
 
