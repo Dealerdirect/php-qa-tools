@@ -9,8 +9,10 @@ convenient way of installing all PHP Quality Assurance tools.
 
 You'll get the following tools by depending on this package:
 
+* **[PHPMD]**: PHP Mess Detector
 * **[PHPUnit]**: Testing framework for PHP
 
+[PHPMD]: https://phpmd.org/
 [PHPUnit]: https://phpunit.de/
 
 ## Contributing
