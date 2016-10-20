@@ -1,0 +1,31 @@
+{
+  "name": "dealerdirect/qa-tools",
+  "description": "Meta package for installing all PHP QA tools you'll ever need",
+  "type": "metapackage",
+  "keywords": [
+    "php",
+    "qa", "quality", "code quality",
+    "stylecheck", "unittest"
+  ],
+  "homepage": "",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Franck Nijhof",
+      "email": "f.nijhof@dealerdirect.nl",
+      "homepage": "http://workingatdealerdirect.nl",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "f.nijhof@@dealerdirect.nl",
+    "issues": "https://github.com/dealerdirect/php-qa-tools/issues",
+    "source": "https://github.com/DealerDirect/php-qa-tools"
+  },
+  "require": {
+    "phpunit/phpunit": "^5.5.0"
+  },
+  "suggest": {
+  },
+  "prefer-stable": true
+}
