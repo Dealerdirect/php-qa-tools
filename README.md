@@ -19,9 +19,11 @@ You'll get the following tools by depending on this package:
 * **[Behat]**: BDD framework for PHP
 * **[Codeception]**: Modern full-stack testing framework for PHP
 * **[GrumPHP]**: Githooks for PHP QA tooling
+* **[JSON Lint]**: JSON Lint for PHP
 * **[Mink]**: PHP 5.3+ web browser emulator abstraction
 * **[ParaTest]**: Parallel testing for PHPUnit
 * **[PHP Coding Standards Fixer]**: A tool to automatically fix PHP coding standards issues
+* **[PHP Parallel Lint]**: Check syntax of PHP files faster than serial check with fancier output
 * **[PHP_CodeSniffer]**: Detects violations of a defined set of coding standards
 * **[PHP_Depend]**: Software metrics for PHP
 * **[php7cc]**: PHP 7 Compatibility Checker
@@ -53,9 +55,11 @@ The following packages are suggested:
 [Behat]: http://behat.org
 [Codeception]: http://codeception.com
 [GrumPHP]: https://github.com/phpro/grumphp
+[JSON Lint]: https://github.com/Seldaek/jsonlint
 [Mink]: http://mink.behat.org
 [ParaTest]: https://github.com/brianium/paratest
 [PHP Coding Standards Fixer]: http://cs.sensiolabs.org
+[PHP Parallel Lint]: https://github.com/JakubOnderka/PHP-Parallel-Lint
 [PHP_CodeSniffer]: https://github.com/squizlabs/PHP_CodeSniffer
 [PHP_Depend]: https://github.com/pdepend/pdepend
 [php7cc]: https://github.com/sstalle/php7cc

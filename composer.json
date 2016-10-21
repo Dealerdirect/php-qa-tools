@@ -34,6 +34,7 @@
     "brianium/paratest": ">=0.14.0,<1.0.0",
     "codeception/codeception": "^2.2.0",
     "friendsofphp/php-cs-fixer": "^1.12.1",
+    "jakub-onderka/php-parallel-lint": ">=0.9.1,<1.0.0",
     "phploc/phploc": "^3.0.1",
     "phpmetrics/phpmetrics": "^1.9.0",
     "phpmd/phpmd": "^2.2.0",
@@ -41,6 +42,7 @@
     "phpunit/phpunit": "^5.5.0",
     "pdepend/pdepend": "^2.2.0",
     "sebastian/phpcpd": "^2.0.0",
+    "seld/jsonlint": "^1.4.0",
     "sensiolabs/security-checker": "^4.0",
     "sstalle/php7cc": "^1.1.0",
     "squizlabs/php_codesniffer": "^2.5",
@@ -54,6 +56,5 @@
     "phpunit/phpcov": "Command-line frontend for the PHP_CodeCoverage library",
     "sami/sami": "Documentation generator used for Symfony2 docs.",
     "theseer/phpdox": "A fast Documentation generator for PHP Code using standard technology (SRC, DOCBLOCK, XML and XSLT) with event based processing."
-  },
-  "prefer-stable": true
+  }
 }
