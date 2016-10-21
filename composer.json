@@ -18,7 +18,7 @@
     }
   ],
   "support": {
-    "email": "f.nijhof@dealerdirect.nl",
+    "email": "opensource@dealerdirect.nl",
     "issues": "https://github.com/dealerdirect/php-qa-tools/issues",
     "source": "https://github.com/DealerDirect/php-qa-tools"
   },
