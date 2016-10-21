@@ -16,15 +16,70 @@ convenient way of installing all PHP Quality Assurance tools.
 
 You'll get the following tools by depending on this package:
 
+* **[Behat]**: BDD framework for PHP
+* **[Codeception]**: Modern full-stack testing framework for PHP
+* **[GrumPHP]**: Githooks for PHP QA tooling
+* **[Mink]**: PHP 5.3+ web browser emulator abstraction
+* **[ParaTest]**: Parallel testing for PHPUnit
+* **[PHP Coding Standards Fixer]**: A tool to automatically fix PHP coding standards issues
 * **[PHP_CodeSniffer]**: Detects violations of a defined set of coding standards
+* **[PHP_Depend]**: Software metrics for PHP
+* **[php7cc]**: PHP 7 Compatibility Checker
+* **[PHPCPD]**: Copy/Paste Detector
+* **[PHPLOC]**: Quickly measure the size of a PHP project
+* **[PhpMetrics]**: A static analysis tool for PHP
 * **[PHPMD]**: PHP Mess Detector
 * **[PHPUnit]**: Testing framework for PHP
 * **[SensioLabs Security Checker]**: Checks for dependencies with known security vulnerabilities
 
+Other packages that you'll get:
+
+* **[Behat Mink]**: Mink extension for Behat
+* **[Mink Goutte Driver]**: Goutte driver for Mink framework
+* **[Mink Selenium2 Driver]**: Selenium2 (WebDriver) driver for Mink framework
+* **[PHPCompatibility]**: PHP Compatibility checks for PHP_CodeSniffer
+* **[prestissimo]**: Composer parallel install plugin
+* **[SimplyAdmire Composer Plugins]**: For installing PHP_CodeSniffer standards
+
+The following packages are suggested:
+* **[ApiGen]**: Smart and Readable Documentation for your PHP project
+* **[Mockery]**: A simple yet flexible PHP mock object framework
+* **[PHP_CodeBrowser]**: A code browser that augments the code with information from various QA tools
+* **[phpcov]**: Command-line frontend for the PHP_CodeCoverage library
+* **[phpDocumentor]**: Documentation generator for PHP
+* **[phpDox]**: Documentation generator for PHP
+* **[Sami]**: An API documentation generator
+
+[Behat]: http://behat.org
+[Codeception]: http://codeception.com
+[GrumPHP]: https://github.com/phpro/grumphp
+[Mink]: http://mink.behat.org
+[ParaTest]: https://github.com/brianium/paratest
+[PHP Coding Standards Fixer]: http://cs.sensiolabs.org
 [PHP_CodeSniffer]: https://github.com/squizlabs/PHP_CodeSniffer
+[PHP_Depend]: https://github.com/pdepend/pdepend
+[php7cc]: https://github.com/sstalle/php7cc
+[PHPCPD]: https://github.com/sebastianbergmann/phpcpd
+[PHPLOC]: https://github.com/sebastianbergmann/phploc
+[PhpMetrics]: http://www.phpmetrics.org
 [PHPMD]: https://phpmd.org
 [PHPUnit]: https://phpunit.de
-[SensioLabs Security Checker]: https://security.sensiolabs.org/
+[SensioLabs Security Checker]: https://security.sensiolabs.org
+
+[Behat Mink]: https://github.com/Behat/MinkExtension
+[Mink Goutte Driver]: https://github.com/minkphp/MinkGoutteDriver
+[Mink Selenium2 Driver]: https://github.com/minkphp/MinkSelenium2Driver
+[PHPCompatibility]: https://github.com/wimg/PHPCompatibility
+[prestissimo]: https://github.com/hirak/prestissimo
+[SimplyAdmire Composer Plugins]: https://github.com/SimplyAdmire/ComposerPlugins
+
+[ApiGen]: http://www.apigen.org
+[Mockery]: https://github.com/padraic/mockery
+[PHP_CodeBrowser]: https://github.com/mayflower/PHP_CodeBrowser
+[phpcov]: https://github.com/sebastianbergmann/phpcov
+[phpDocumentor]: https://www.phpdoc.org
+[phpDox]: http://phpdox.de
+[Sami]: https://github.com/FriendsOfPHP/sami
 
 ## Contributing
 

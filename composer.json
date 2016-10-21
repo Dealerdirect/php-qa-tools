@@ -24,12 +24,36 @@
   },
   "require": {
     "php": ">=5.6,<8.0-dev",
+
+    "simplyadmire/composer-plugins": "^2.1.0",
+    "hirak/prestissimo": "^0.3",
+
+    "behat/behat": "^3.1.0",
+    "behat/mink": "^1.7.0",
+    "behat/mink-goutte-driver": "^1.2.0",
+    "brianium/paratest": ">=0.14.0,<1.0.0",
+    "codeception/codeception": "^2.2.0",
+    "friendsofphp/php-cs-fixer": "^1.12.1",
+    "phploc/phploc": "^3.0.1",
+    "phpmetrics/phpmetrics": "^1.9.0",
     "phpmd/phpmd": "^2.2.0",
+    "phpro/grumphp": ">=0.9.0,<1.0.0",
     "phpunit/phpunit": "^5.5.0",
+    "pdepend/pdepend": "^2.2.0",
+    "sebastian/phpcpd": "^2.0.0",
     "sensiolabs/security-checker": "^4.0",
-    "squizlabs/php_codesniffer": "^2.5"
+    "sstalle/php7cc": "^1.1.0",
+    "squizlabs/php_codesniffer": "^2.5",
+    "wimg/php-compatibility": "^7.0.0"
   },
   "suggest": {
+    "apigen/apigen": "Smart and Readable Documentation for your PHP project.",
+    "mayflower/php-codebrowser": "A code browser that augments the code with information from various QA tools.",
+    "mockery/mockery": "A simple yet flexible PHP mock object framework",
+    "phpdocumentor/phpdocumentor": "Documentation generator for PHP.",
+    "phpunit/phpcov": "Command-line frontend for the PHP_CodeCoverage library",
+    "sami/sami": "Documentation generator used for Symfony2 docs.",
+    "theseer/phpdox": "A fast Documentation generator for PHP Code using standard technology (SRC, DOCBLOCK, XML and XSLT) with event based processing."
   },
   "prefer-stable": true
 }
