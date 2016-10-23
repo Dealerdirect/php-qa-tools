@@ -26,7 +26,6 @@
     "php": ">=5.6,<8.0-dev",
 
     "dealerdirect/phpcodesniffer-composer-installer": "@dev",
-    "simplyadmire/composer-plugins": "^2.1.0",
     "hirak/prestissimo": "^0.3",
 
     "behat/behat": "^3.1.0",
