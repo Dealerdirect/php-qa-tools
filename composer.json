@@ -25,6 +25,7 @@
   "require": {
     "php": ">=5.6,<8.0-dev",
 
+    "dealerdirect/phpcodesniffer-composer-installer": "@dev",
     "simplyadmire/composer-plugins": "^2.1.0",
     "hirak/prestissimo": "^0.3",
 
@@ -44,6 +45,7 @@
     "sebastian/phpcpd": "^2.0.0",
     "seld/jsonlint": "^1.4.0",
     "sensiolabs/security-checker": "^4.0",
+    "sllh/composer-versions-check": "^2.0.0",
     "sstalle/php7cc": "^1.1.0",
     "squizlabs/php_codesniffer": "^2.5",
     "wimg/php-compatibility": "^7.0.0"
@@ -56,5 +58,10 @@
     "phpunit/phpcov": "Command-line frontend for the PHP_CodeCoverage library",
     "sami/sami": "Documentation generator used for Symfony2 docs.",
     "theseer/phpdox": "A fast Documentation generator for PHP Code using standard technology (SRC, DOCBLOCK, XML and XSLT) with event based processing."
+  },
+  "extra": {
+    "phpcodesniffer-mapping": {
+      "wimg/php-compatibility": "PHPCompatibility"
+    }
   }
 }
