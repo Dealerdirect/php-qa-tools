@@ -40,8 +40,6 @@ Other packages that you'll get:
 * **[Composer Versions Check]**: Checks if packages are up to date to last major versions after update
 * **[Mink Goutte Driver]**: Goutte driver for Mink framework
 * **[Mink Selenium2 Driver]**: Selenium2 (WebDriver) driver for Mink framework
-* **[PHP_CodeSniffer Composer Installer]**: For installing PHP_CodeSniffer coding standards
-* **[PHPCompatibility]**: PHP Compatibility checks for PHP_CodeSniffer
 * **[prestissimo]**: Composer parallel install plugin
 
 The following packages are suggested:
@@ -75,8 +73,6 @@ The following packages are suggested:
 [Composer Versions Check]: https://github.com/Soullivaneuh/composer-versions-check
 [Mink Goutte Driver]: https://github.com/minkphp/MinkGoutteDriver
 [Mink Selenium2 Driver]: https://github.com/minkphp/MinkSelenium2Driver
-[PHP_CodeSniffer Composer Installer]: https://github.com/DealerDirect/php-qa-tools
-[PHPCompatibility]: https://github.com/wimg/PHPCompatibility
 [prestissimo]: https://github.com/hirak/prestissimo
 
 [ApiGen]: http://www.apigen.org
