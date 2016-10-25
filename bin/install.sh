@@ -1,71 +1,63 @@
 #!/usr/bin/env bash
+set -eu
 
 # Ensure PHP is installed
-php -v > /dev/null 2>&1
-if [[ $? -ne 0 ]]; then
+if ! command -v php > /dev/null 2>&1; then
   echo "PHP is not found, installation aborted!"
   exit 1
 fi
 
-# Check if Composer is already globally available
-composer -v > /dev/null 2>&1
-
 # Ensure Composer is installed/updated
-if [[ $? -ne 0 ]]; then
+if ! command -v composer > /dev/null 2>&1; then
   echo "*** Installing Composer ***"
-
-  EXPECTED_SIGNATURE=$(wget https://composer.github.io/installer.sig -O - -q)
   php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-  ACTUAL_SIGNATURE=$(php -r "echo hash_file('SHA384', 'composer-setup.php');")
 
-  if [ "$EXPECTED_SIGNATURE" = "$ACTUAL_SIGNATURE" ]
-  then
+  if [ \
+      "$(curl -S https://composer.github.io/installer.sig)" = \
+      "$(php -r \"echo hash_file\('SHA384', 'composer-setup.php'\);\")" \
+  ]; then
       php composer-setup.php --quiet --filename=composer
-      RESULT=$?
-      if [[ $? -eq 0 ]]; then
-        sudo mv composer /usr/local/bin/composer
-        RESULT=$?
-      fi
+      sudo mv composer /usr/local/bin/composer
       rm composer-setup.php
-      if [[ RESULT -ne 0 ]]; then
-        exit $RESULT
-      fi
   else
       >&2 echo 'ERROR: Invalid composer installer signature'
       rm composer-setup.php
       exit 1
   fi
-else
-  echo "*** Updating Composer ***"
-  composer selfupdate > /dev/null 2>&1
-  if [[ $? -ne 0 ]]; then
-    composer global update "composer/composer"
-  fi
 fi
 
 echo "*** Updating shell profiles ***"
 # Add Composer's Global Bin to ~/.profile path
-if [[ ! -f "~/.profile" ]]; then
-  touch ~/.profile
+if [[ ! -f "$HOME/.profile" ]]; then
+  touch "$HOME/.profile"
 fi
-grep -q -F 'export COMPOSER_HOME="~/.composer"' ~/.profile || echo 'export COMPOSER_HOME="~/.composer"' >> ~/.profile
-grep -q -F 'export PATH=$PATH:$COMPOSER_HOME/vendor/bin' ~/.profile || echo 'export PATH=$PATH:$COMPOSER_HOME/vendor/bin' >> ~/.profile
+if grep -q -F "export COMPOSER_HOME=$HOME/.composer" "$HOME/.profile"; then
+  echo "export COMPOSER_HOME=$HOME/.composer" >> "$HOME/.profile"
+fi
+if grep -q -F "export PATH=$PATH:\$COMPOSER_HOME/vendor/bin" "$HOME/.profile"; then
+  echo "export PATH=$PATH:\$COMPOSER_HOME/vendor/bin" >> "$HOME/.profile"
+fi
 
 # Source the .profile to pick up changes
-. ~/.profile
+# shellcheck source=/dev/null
+source "$HOME/.profile"
 
 # Test if ZSH is installed
-zsh --version > /dev/null 2>&1
-if [[ $? -eq 0 ]]; then
+if command -v zsh > /dev/null 2>&1; then
   # Add Composer's Global Bin to ~/.zprofile path
-  if [[ ! -f "~/.zprofile" ]]; then
-    touch ~/.zprofile
+  if [[ ! -f "$HOME/.zprofile" ]]; then
+    touch "$HOME/.zprofile"
   fi
-  grep -q -F 'export COMPOSER_HOME="~/.composer"' ~/.zprofile || echo 'export COMPOSER_HOME="~/.composer"' >> ~/.zprofile
-  grep -q -F 'export PATH=$PATH:$COMPOSER_HOME/vendor/bin' ~/.zprofile || echo 'export PATH=$PATH:$COMPOSER_HOME/vendor/bin' >> ~/.zprofile
+  if grep -q -F "export COMPOSER_HOME=$HOME/.composer" "$HOME/.zprofile"; then
+    echo "export COMPOSER_HOME=$HOME/.composer" >> "$HOME/.zprofile"
+  fi
+  if grep -q -F "export PATH=$PATH:$COMPOSER_HOME/vendor/bin" "$HOME/.zprofile"; then
+    echo "export PATH=$PATH:$COMPOSER_HOME/vendor/bin" >> "$HOME/.zprofile"
+  fi
 
   # Source the .zprofile to pick up changes
-  . ~/.zprofile
+  # shellcheck source=/dev/null
+  source "$HOME/.zprofile"
 fi
 
 # Ensure Dealerdirect PHP QA tools are installed globally
