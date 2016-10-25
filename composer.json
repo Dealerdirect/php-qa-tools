@@ -25,7 +25,6 @@
   "require": {
     "php": ">=5.6,<8.0-dev",
 
-    "dealerdirect/phpcodesniffer-composer-installer": "^0.1.0",
     "hirak/prestissimo": "^0.3",
 
     "behat/behat": "^3.1.0",
@@ -46,8 +45,7 @@
     "sensiolabs/security-checker": "^4.0",
     "sllh/composer-versions-check": "^2.0.0",
     "sstalle/php7cc": "^1.1.0",
-    "squizlabs/php_codesniffer": "^2.5",
-    "wimg/php-compatibility": "^7.0.0"
+    "squizlabs/php_codesniffer": "^2.5"
   },
   "suggest": {
     "apigen/apigen": "Smart and Readable Documentation for your PHP project.",
