@@ -87,6 +87,48 @@ The following packages are suggested:
 [phpDox]: http://phpdox.de
 [Sami]: https://github.com/FriendsOfPHP/sami
 
+## Usage
+
+This is a simple metapackage, but still can be used in different ways.
+
+#### Global install
+
+This is by far the easiest and most convenient method. Simply having all the tools available system wide.
+
+The following script will install a system wide Composer for you, including the QA tools.
+
+```bash
+bash <(curl -S https://raw.githubusercontent.com/DealerDirect/php-qa-tools/master/bin/install.sh)
+```
+
+If you already have a global Composer setup, you can execute this to include the tools.
+
+```bash
+composer global require "dealerdirect/qa-tools"
+```
+
+#### Project install
+
+The other option is to install this on a per project basis.
+
+```bash
+composer require --dev "dealerdirect/qa-tools"
+```
+
+Or modify your `composer.json` to include `dealerdirect/qa-tools` in the `require-dev` sections.
+
+```json
+{
+  "name": "acme/my-project",
+  "require": {
+    "** your requirements **": "*"
+  },
+  "require-dev": {
+    "dealerdirect/qa-tools": "*"
+  }
+}
+```
+
 ## Contributing
 
 This is an active open-source project. We are always open to people who want to use the code or contribute to it.
