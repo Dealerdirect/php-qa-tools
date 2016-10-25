@@ -60,9 +60,15 @@ if command -v zsh > /dev/null 2>&1; then
   source "$HOME/.zprofile"
 fi
 
-# Ensure Dealerdirect PHP QA tools are installed globally
-echo "*** Installing Dealerdirect PHP QA Tools ***"
-composer global require "dealerdirect/qa-tools:@dev"
-
-echo "*** Updating Dealerdirect PHP QA Tools ***"
-composer global update "dealerdirect/qa-tools:@dev"
+# Install/Update Dealerdirect QA tools
+if ! grep -q -F "dealerdirect/qa-tools" "$HOME/.composer/composer.json"  > /dev/null 2>&1; then
+  echo "*** Installing Composer Prestissimo in order to speed up next steps ***"
+  composer global require "hirak/prestissimo:^0.3"
+  echo "*** Installing Dealerdirect PHP QA Tools ***"
+  composer global require "dealerdirect/qa-tools:@dev"
+  echo "*** Removing local Prestissimo dependency ***"
+  composer global remove "hirak/prestissimo"
+else
+  echo "*** Updating Dealerdirect PHP QA Tools ***"
+  composer global update "dealerdirect/qa-tools:@dev"
+fi
