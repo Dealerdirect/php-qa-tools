@@ -83,6 +83,89 @@ The following packages are suggested:
 [phpDox]: http://phpdox.de
 [Sami]: https://github.com/FriendsOfPHP/sami
 
+## Usage
+
+This is a simple metapackage which can be used in two different ways; globally installed or on a per project basis.
+
+Both methods have their pros (+) and cons (-).
+
+**Global installation**:
+* \+ All tools are present anywhere on your system
+* \+ Can be used on any codebase, even the ones that don't use Composer.
+* \- You'll have to update manually, since it's not a project, versioning is not managed.
+
+*Per project installation*:
+* \+ Versioning (update/installation) is provided in the project
+* \- Tools not available system wide. You'll need to execute them from a specific path.
+
+These methods are not mutual exclusive. You can have your global installed version, which can be used anywhere, but
+still use the one provided in a project.
+
+## Installation
+
+### Global installation
+
+The following script will install a system wide Composer for you, including the QA tools.
+
+```bash
+bash <(curl -S https://raw.githubusercontent.com/DealerDirect/php-qa-tools/master/bin/install.sh)
+```
+
+That's it. This can be put in any instructions, such as a README or someone's blog, since the logic is in the shell
+script. Provided you download the script using https, the file has standard levels of authentication and encryption
+protecting it from manipulation. We also sign the install with a GPG key, this way you can check if the downloaded
+releases signature matches the public key of Dealerdirect.
+
+```bash
+gpg --keyserver hkp://keys.gnupg.net --recv-keys C4133165DF5EB4BAEABDADCACF1E7823C5339B59
+curl -O https://raw.githubusercontent.com/DealerDirect/php-qa-tools/master/bin/install.sh
+curl -O https://raw.githubusercontent.com/DealerDirect/php-qa-tools/master/bin/install.sh.sig
+gpg --verify install.sh.sig
+bash install.sh
+```
+
+This is obviously a shell script, if you're really concerned about the argument that it may contain nefarious
+activities within, you can easily review it before you run it.
+
+```bash
+curl -O https://raw.githubusercontent.com/DealerDirect/php-qa-tools/master/bin/install.sh
+less install.sh
+bash instal.sh
+```
+
+
+
+If you already have a global Composer setup, you could include the tools manually, without the need for running
+the shell script above.
+
+```bash
+composer global require "dealerdirect/qa-tools:*"
+```
+
+#### Per project installation
+
+The other option is to install this on a per project basis.
+
+Using Composer (preferred method):
+
+```bash
+composer require --dev "dealerdirect/qa-tools"
+```
+
+Or modify your `composer.json` to include `dealerdirect/qa-tools` in the `require-dev` sections:
+
+```json
+{
+  "name": "acme/my-project",
+  "require": {
+    "…": "*"
+  },
+  "require-dev": {
+    "dealerdirect/qa-tools": "*"
+  }
+}
+```
+
 ## Contributing
 
 This is an active open-source project. We are always open to people who want to use the code or contribute to it.
