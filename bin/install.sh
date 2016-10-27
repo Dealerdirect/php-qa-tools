@@ -37,13 +37,12 @@ set -o pipefail # Return exit status of the last command in the pipe that failed
 # GLOBALS
 # ==============================================================================
 readonly EX_OK=0	            # Successful termination
-readonly EX_ROOT=3            # Running as root
-readonly EX_PHP_NOT_FOUND=4   # PHP was not found
-readonly EX_GIT_NOT_FOUND=5   # GIT not found
-readonly EX_CURL_NOT_FOUND=6  # curl not found
-readonly EX_NET_ERR=7         # Something went wrong during a file download
-readonly EX_SIG_MISMATCH=8    # Composer installer signature mismatch
-readonly EX_SETUP_ERR=9       # Composer setup failure
+readonly EX_PHP_NOT_FOUND=3   # PHP was not found
+readonly EX_GIT_NOT_FOUND=4   # GIT not found
+readonly EX_CURL_NOT_FOUND=5  # curl not found
+readonly EX_NET_ERR=6         # Something went wrong during a file download
+readonly EX_SIG_MISMATCH=7    # Composer installer signature mismatch
+readonly EX_SETUP_ERR=8       # Composer setup failure
 
 # Temporary directory for storing the Composer setup script
 readonly COMPOSER_TMPDIR=$(mktemp -d "/tmp/composer.XXXXXXXXXXXX")
@@ -119,7 +118,6 @@ display_error_message() {
 #   EX_CURL_NOT_FOUND
 #   EX_GIT_NOT_FOUND
 #   EX_PHP_NOT_FOUND
-#   EX_ROOT
 #   UID
 # Arguments:
 #   None
@@ -127,9 +125,6 @@ display_error_message() {
 #   None
 # ------------------------------------------------------------------------------
 check_runtime_requirements() {
-  if [[ "$UID" -eq 0 ]]; then
-    display_error_message 'This script must NOT be run as root' $EX_ROOT
-  fi
   type php > /dev/null 2>&1 || display_error_message \
       'PHP is not found, installation aborted!' $EX_PHP_NOT_FOUND
   type git > /dev/null 2>&1 || display_error_message \
