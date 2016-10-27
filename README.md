@@ -113,16 +113,27 @@ bash <(curl -S https://raw.githubusercontent.com/DealerDirect/php-qa-tools/maste
 
 That's it. This can be put in any instructions, such as a README or someone's blog, since the logic is in the shell
 script. Provided you download the script using https, the file has standard levels of authentication and encryption
-protecting it from manipulation.
+protecting it from manipulation. We also sign the install with a GPG key, this way you can check if the downloaded
+releases signature matches the public key of Dealerdirect.
+
+```bash
+gpg --keyserver hkp://keys.gnupg.net --recv-keys C4133165DF5EB4BAEABDADCACF1E7823C5339B59
+curl -O https://raw.githubusercontent.com/DealerDirect/php-qa-tools/master/bin/install.sh
+curl -O https://raw.githubusercontent.com/DealerDirect/php-qa-tools/master/bin/install.sh.sig
+gpg --verify install.sh.sig
+bash install.sh
+```
 
 This is obviously a shell script, if you're really concerned about the argument that it may contain nefarious
 activities within, you can easily review it before you run it.
 
 ```bash
-curl -o https://raw.githubusercontent.com/DealerDirect/php-qa-tools/master/bin/install.sh
+curl -O https://raw.githubusercontent.com/DealerDirect/php-qa-tools/master/bin/install.sh
 less install.sh
 bash instal.sh
 ```
+
+
 
 If you already have a global Composer setup, you could include the tools manually, without the need for running
 the shell script above.
