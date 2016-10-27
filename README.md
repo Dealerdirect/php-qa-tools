@@ -85,11 +85,25 @@ The following packages are suggested:
 
 ## Usage
 
-This is a simple metapackage, but still can be used in different ways.
+This is a simple metapackage which can be used in two different ways; globally installed or on a per project basis.
 
-#### Global install
+Both methods have their pros (+) and cons (-).
 
-This is by far the easiest and most convenient method. Simply having all the tools available system wide.
+**Global installation**:
+* \+ All tools are present anywhere on your system
+* \+ Can be used on any codebase, even the ones that don't use Composer.
+* \- You'll have to update manually, since it's not a project, versioning is not managed.
+
+*Per project installation*:
+* \+ Versioning (update/installation) is provided in the project
+* \- Tools not available system wide. You'll need to execute them from a specific path.
+
+These methods are not mutual exclusive. You can have your global installed version, which can be used anywhere, but
+still use the one provided in a project.
+
+## Installation
+
+### Global installation
 
 The following script will install a system wide Composer for you, including the QA tools.
 
@@ -97,27 +111,43 @@ The following script will install a system wide Composer for you, including the 
 bash <(curl -S https://raw.githubusercontent.com/DealerDirect/php-qa-tools/master/bin/install.sh)
 ```
 
-If you already have a global Composer setup, you can execute this to include the tools.
+That's it. This can be put in any instructions, such as a README or someone's blog, since the logic is in the shell
+script. Provided you download the script using https, the file has standard levels of authentication and encryption
+protecting it from manipulation.
+
+This is obviously a shell script, if you're really concerned about the argument that it may contain nefarious
+activities within, you can easily review it before you run it.
 
 ```bash
-composer global require "dealerdirect/qa-tools"
+curl -o https://raw.githubusercontent.com/DealerDirect/php-qa-tools/master/bin/install.sh
+less install.sh
+bash instal.sh
 ```
 
-#### Project install
+If you already have a global Composer setup, you could include the tools manually, without the need for running
+the shell script above.
+
+```bash
+composer global require "dealerdirect/qa-tools:*"
+```
+
+#### Per project installation
 
 The other option is to install this on a per project basis.
 
+Using Composer (preferred method):
+
 ```bash
-composer require --dev "dealerdirect/qa-tools"
+composer require --dev "dealerdirect/qa-tools:*"
 ```
 
-Or modify your `composer.json` to include `dealerdirect/qa-tools` in the `require-dev` sections.
+Or modify your `composer.json` to include `dealerdirect/qa-tools` in the `require-dev` sections:
 
 ```json
 {
   "name": "acme/my-project",
   "require": {
-    "** your requirements **": "*"
+    "…": "*"
   },
   "require-dev": {
     "dealerdirect/qa-tools": "*"
