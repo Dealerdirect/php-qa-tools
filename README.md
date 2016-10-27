@@ -149,7 +149,7 @@ The other option is to install this on a per project basis.
 Using Composer (preferred method):
 
 ```bash
-composer require --dev "dealerdirect/qa-tools:*"
+composer require --dev "dealerdirect/qa-tools"
 ```
 
 Or modify your `composer.json` to include `dealerdirect/qa-tools` in the `require-dev` sections:
