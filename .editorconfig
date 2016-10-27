@@ -11,6 +11,9 @@ trim_trailing_whitespace = true
 ident_size = 2
 trim_trailing_whitespace = false
 
+[*.sh]
+ident_size = 2
+
 [*.json]
 ident_size = 2
 
