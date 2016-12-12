@@ -34,7 +34,7 @@
     "brianium/paratest": ">=0.14.0,<1.0.0",
     "codeception/codeception": "^2.2.0",
     "frenck/php-compatibility": "^7.0.0",
-    "friendsofphp/php-cs-fixer": "^1.12.1",
+    "friendsofphp/php-cs-fixer": "^2.0.0",
     "jakub-onderka/php-parallel-lint": ">=0.9.1,<1.0.0",
     "phploc/phploc": "^3.0.1",
     "phpmetrics/phpmetrics": "^1.9.0",
