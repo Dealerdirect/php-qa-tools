@@ -16,23 +16,33 @@ convenient way of installing all PHP Quality Assurance tools.
 
 You'll get the following tools by depending on this package:
 
-* **[Behat]**: BDD framework for PHP
-* **[Codeception]**: Modern full-stack testing framework for PHP
-* **[GrumPHP]**: Githooks for PHP QA tooling
+### Linters / Fixers
+
 * **[JSON Lint]**: JSON Lint for PHP
-* **[Mink]**: PHP 5.3+ web browser emulator abstraction
-* **[ParaTest]**: Parallel testing for PHPUnit
 * **[PHP Coding Standards Fixer]**: A tool to automatically fix PHP coding standards issues
 * **[PHP Parallel Lint]**: Check syntax of PHP files faster than serial check with fancier output
 * **[PHP_CodeSniffer]**: Detects violations of a defined set of coding standards
-* **[PHP_Depend]**: Software metrics for PHP
 * **[php7cc]**: PHP 7 Compatibility Checker
+
+### Quality Assistance
+
+* **[GrumPHP]**: Githooks for PHP QA tooling
+* **[PHP_Depend]**: Software metrics for PHP
 * **[PHPCPD]**: Copy/Paste Detector
 * **[PHPLOC]**: Quickly measure the size of a PHP project
 * **[PhpMetrics]**: A static analysis tool for PHP
 * **[PHPMD]**: PHP Mess Detector
-* **[PHPUnit]**: Testing framework for PHP
 * **[SensioLabs Security Checker]**: Checks for dependencies with known security vulnerabilities
+
+### Test Related
+
+* **[Behat]**: BDD framework for PHP
+* **[Codeception]**: Modern full-stack testing framework for PHP
+* **[Mink]**: PHP 5.3+ web browser emulator abstraction
+* **[ParaTest]**: Parallel testing for PHPUnit
+* **[PHPUnit]**: Testing framework for PHP
+
+### Other
 
 Other packages that you'll get:
 
@@ -44,7 +54,10 @@ Other packages that you'll get:
 * **[PHPCompatibility]**: PHP Compatibility checks for PHP_CodeSniffer
 * **[prestissimo]**: Composer parallel install plugin
 
+## Suggested
+
 The following packages are suggested:
+
 * **[ApiGen]**: Smart and Readable Documentation for your PHP project
 * **[Mockery]**: A simple yet flexible PHP mock object framework
 * **[PHP_CodeBrowser]**: A code browser that augments the code with information from various QA tools
@@ -66,8 +79,8 @@ The following packages are suggested:
 [php7cc]: https://github.com/sstalle/php7cc
 [PHPCPD]: https://github.com/sebastianbergmann/phpcpd
 [PHPLOC]: https://github.com/sebastianbergmann/phploc
-[PhpMetrics]: http://www.phpmetrics.org
 [PHPMD]: https://phpmd.org
+[PhpMetrics]: http://www.phpmetrics.org
 [PHPUnit]: https://phpunit.de
 [SensioLabs Security Checker]: https://security.sensiolabs.org
 
@@ -77,14 +90,14 @@ The following packages are suggested:
 [Mink Selenium2 Driver]: https://github.com/minkphp/MinkSelenium2Driver
 [PHP_CodeSniffer Composer Installer]: https://github.com/DealerDirect/php-qa-tools
 [PHPCompatibility]: https://github.com/wimg/PHPCompatibility
-[prestissimo]: https://github.com/hirak/prestissimo
+[Prestissimo]: https://github.com/hirak/prestissimo
 
 [ApiGen]: http://www.apigen.org
 [Mockery]: https://github.com/padraic/mockery
 [PHP_CodeBrowser]: https://github.com/mayflower/PHP_CodeBrowser
-[phpcov]: https://github.com/sebastianbergmann/phpcov
-[phpDocumentor]: https://www.phpdoc.org
-[phpDox]: http://phpdox.de
+[PhpCov]: https://github.com/sebastianbergmann/phpcov
+[PhpDocumentor]: https://www.phpdoc.org
+[PhpDox]: http://phpdox.de
 [Sami]: https://github.com/FriendsOfPHP/sami
 
 ## Usage
