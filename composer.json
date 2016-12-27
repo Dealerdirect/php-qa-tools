@@ -47,7 +47,9 @@
     "sensiolabs/security-checker": "^4.0",
     "sllh/composer-versions-check": "^2.0.0",
     "sstalle/php7cc": "^1.1.0",
-    "squizlabs/php_codesniffer": "^2.5"
+    "squizlabs/php_codesniffer": "^2.5",
+
+    "ocramius/proxy-manager": "^1.0.0"
   },
   "suggest": {
     "apigen/apigen": "Smart and Readable Documentation for your PHP project.",
