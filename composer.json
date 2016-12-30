@@ -46,8 +46,8 @@
     "seld/jsonlint": "^1.4.0",
     "sensiolabs/security-checker": "^4.0",
     "sllh/composer-versions-check": "^2.0.0",
-    "sstalle/php7cc": "^1.1.0",
     "squizlabs/php_codesniffer": "^2.5",
+    "scheb/tombstone-analyzer": "^0.3.0",
 
     "ocramius/proxy-manager": "^1.0.0"
   },

@@ -22,7 +22,6 @@ You'll get the following tools by depending on this package:
 * **[PHP Coding Standards Fixer]**: A tool to automatically fix PHP coding standards issues
 * **[PHP Parallel Lint]**: Check syntax of PHP files faster than serial check with fancier output
 * **[PHP_CodeSniffer]**: Detects violations of a defined set of coding standards
-* **[php7cc]**: PHP 7 Compatibility Checker
 
 ### Quality Assistance
 
@@ -53,6 +52,7 @@ Other packages that you'll get:
 * **[PHP_CodeSniffer Composer Installer]**: For installing PHP_CodeSniffer coding standards
 * **[PHPCompatibility]**: PHP Compatibility checks for PHP_CodeSniffer
 * **[prestissimo]**: Composer parallel install plugin
+* **[Tombstone Analyzer]**: Report generation for Tombstones
 
 ## Suggested
 
@@ -76,13 +76,13 @@ The following packages are suggested:
 [PHP Parallel Lint]: https://github.com/JakubOnderka/PHP-Parallel-Lint
 [PHP_CodeSniffer]: https://github.com/squizlabs/PHP_CodeSniffer
 [PHP_Depend]: https://github.com/pdepend/pdepend
-[php7cc]: https://github.com/sstalle/php7cc
 [PHPCPD]: https://github.com/sebastianbergmann/phpcpd
 [PHPLOC]: https://github.com/sebastianbergmann/phploc
 [PHPMD]: https://phpmd.org
 [PhpMetrics]: http://www.phpmetrics.org
 [PHPUnit]: https://phpunit.de
 [SensioLabs Security Checker]: https://security.sensiolabs.org
+[Tombstone Analyzer]: https://github.com/scheb/tombstone-analyzer
 
 [Behat Mink]: https://github.com/Behat/MinkExtension
 [Composer Versions Check]: https://github.com/Soullivaneuh/composer-versions-check
