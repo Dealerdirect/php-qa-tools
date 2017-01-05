@@ -88,7 +88,7 @@ The following packages are suggested:
 [Composer Versions Check]: https://github.com/Soullivaneuh/composer-versions-check
 [Mink Goutte Driver]: https://github.com/minkphp/MinkGoutteDriver
 [Mink Selenium2 Driver]: https://github.com/minkphp/MinkSelenium2Driver
-[PHP_CodeSniffer Composer Installer]: https://github.com/DealerDirect/php-qa-tools
+[PHP_CodeSniffer Composer Installer]: https://github.com/DealerDirect/phpcodesniffer-composer-installer
 [PHPCompatibility]: https://github.com/wimg/PHPCompatibility
 [Prestissimo]: https://github.com/hirak/prestissimo
 
