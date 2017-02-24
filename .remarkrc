@@ -1,0 +1,21 @@
+{
+  "presets": [
+    "remark-preset-lint-dealerdirect"
+  ],
+  "plugins": {
+    "validate-links": {
+    }
+  },
+  "settings": {
+    "commonmark": true,
+    "gfm": true,
+    "yaml": true,
+    "rule": "-",
+    "ruleSpaces": false,
+    "ruleRepetition": 70,
+    "emphasis": "*",
+    "listItemIndent": "1",
+    "incrementListMarker": false,
+    "spacedTable": false
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "dealerdirect-php-qa-tools",
+  "version": "0.1.0",
+  "description": "PHP Composer meta package for installing all PHP QA tools you'll ever need.",
+  "keywords": [
+    "dealerdirect",
+    "guides"
+  ],
+  "author": "Franck Nijhof <f.nijhof@dealerdirect.nl>",
+  "homepage": "https://github.com/dealerdirect/php-qa-tools",
+  "license": "MIT",
+  "dependencies": {
+    "alex": "^4.0.1",
+    "markdown-spellcheck": "^0.11.0",
+    "remark-cli": "^2.1.0",
+    "remark-lint": "^5.2.0",
+    "remark-lint-books-links": "^1.0.0",
+    "remark-lint-no-empty-sections": "^1.0.0",
+    "remark-lint-no-url-trailing-slash": "^2.0.0",
+    "remark-preset-lint-dealerdirect": "^0.1.0",
+    "remark-validate-links": "^5.0.0"
+  },
+  "scripts": {
+    "lint:alex": "alex .",
+    "lint:remark": "remark -f . --ignore-path '.gitignore'",
+    "lint:spellcheck": "find . -type f -name '*.md' -not -path './CHANGELOG.md' -not -path './node_modules/*' -not -path './vendor/*' -print0 | xargs -0 -n1 mdspell --report --en-us --ignore-numbers --ignore-acronyms",
+    "lint:spellcheck-interactive": "find . -type f -name '*.md' -not -path './node_modules/*' --not-path '.v/endor/*' -print0 | xargs -0 -n1 mdspell --en-us --ignore-numbers --ignore-acronyms",
+    "lint": "npm run lint:alex && npm run lint:remark && npm run lint:spellcheck-interactive",
+    "test": "npm run lint:alex && npm run lint:remark && npm run lint:spellcheck"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dealerdirect/php-qa-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dealerdirect/php-qa-tools/issues"
+  }
+}
