@@ -7,16 +7,17 @@ php:
   - 7.0
   - 5.6
 
+env:
+  global:
+    - PATH="${HOME}/bin:${PATH}"
+    - SHELLCHECK_URL="https://s3.amazonaws.com/travis-blue-public/binaries/ubuntu/14.04/x86_64/shellcheck-0.4.5.tar.bz2"
+
 before_install:
-before_install:
-    - sudo apt-get -qq update
-    - sudo apt-get install -y cabal-install
-    - cabal update
-    - git clone https://github.com/koalaman/shellcheck.git
-    - cd shellcheck
-    - cabal install
-    - cd ..
-    - export PATH="$HOME/.cabal/bin:$PATH"
+    - if ! shellcheck --version &>/dev/null; then
+        curl -sSL "https://s3.amazonaws.com/travis-blue-public/binaries/ubuntu/14.04/x86_64/shellcheck-0.4.5.tar.bz2"
+        | tar --exclude 'SHA256SUMS' --strip-components=1 -C "${HOME}/bin" -xjf -;
+      fi
+    - shellcheck --version
     - gpg --keyserver hkp://keys.gnupg.net --recv-keys C4133165DF5EB4BAEABDADCACF1E7823C5339B59
 
 script:
