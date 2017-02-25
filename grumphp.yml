@@ -1,0 +1,16 @@
+---
+parameters:
+  git_dir: .
+  bin_dir: vendor/bin
+  tasks:
+    jsonlint:
+      detect_key_conflicts: true
+    composer: ~
+    yamllint: ~
+    securitychecker: ~
+    git_conflict: ~
+    npm_script:
+      script: "test"
+      triggered_by: [md]
+      working_directory: "./"
+      is_run_task: true

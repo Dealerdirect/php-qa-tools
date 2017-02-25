@@ -1,26 +1,66 @@
+---
 language: php
+dist: trusty
+sudo: required
 
 php:
+  - 7.1
   - 7.0
   - 5.6
 
+env:
+  global:
+    - PATH="${HOME}/bin:${PATH}"
+    - SHELLCHECK_URL="https://s3.amazonaws.com/travis-blue-public/binaries/ubuntu/14.04/x86_64/shellcheck-0.4.5.tar.bz2"
+
+cache:
+  directories:
+    - "${HOME}/bin"
+    - "${HOME}/.composer/cache/files"
+    - "${HOME}/.npm"
+    - "${HOME}/.yarn-cache"
+
+before_install:
+  - gpg --keyserver hkp://keys.gnupg.net --recv-keys C4133165DF5EB4BAEABDADCACF1E7823C5339B59
+  - npm set loglevel error
+  - npm set progress false
+
+install:
+  - pip install yamllint
+  - if ! shellcheck --version ; then
+      curl -sSL "${SHELLCHECK_URL}" | tar --exclude 'SHA256SUMS' --strip-components=1 -C "${HOME}/bin" -xjf -;
+    fi
+  - shellcheck --version
+  - npm install -g yarn
+  - npm install -g jsonlint
+
 script:
-  - composer self-update || true
+  - find . -type f -name "*.yml" -print0 | xargs -0 -n1 yamllint
+  - find . -type f -name "*.json" -print0 | xargs -0 -n1 jsonlint -q
+  - gpg --verify ./bin/install.sh.sig
+  - shellcheck ./bin/install.sh
   - composer validate
-  - composer install
+  - composer install --no-progress --no-suggest
+  - yarn install --no-progress
+  - yarn run test
   - ./vendor/bin/behat --version
   - ./vendor/bin/codecept --version
+  - ./vendor/bin/composer -V
+  - ./vendor/bin/dep -V
   - ./vendor/bin/grumphp --version
   - ./vendor/bin/jsonlint -h
-  - ./vendor/bin/paratest --version
-  - ./vendor/bin/php-cs-fixer --version
   - ./vendor/bin/parallel-lint -h
-  - ./vendor/bin/phpcs --version
+  - ./vendor/bin/paratest --version
   - ./vendor/bin/pdepend --version
+  - ./vendor/bin/phing -v
+  - ./vendor/bin/php-cs-fixer --version
+  - ./vendor/bin/phpcbf --version
   - ./vendor/bin/phpcpd --version
+  - ./vendor/bin/phpcs --version
   - ./vendor/bin/phploc --version
-  - ./vendor/bin/phpmetrics --version
   - ./vendor/bin/phpmd --version
+  - ./vendor/bin/phpmetrics --version
   - ./vendor/bin/phpunit --version
   - ./vendor/bin/security-checker --version
+  - ./vendor/bin/tombstone --version
   - ./vendor/bin/security-checker security:check composer.lock
