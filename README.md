@@ -32,14 +32,15 @@ You'll get the following tools by depending on this package:
 - **[PHP_Depend][pdepend]**: Software metrics for PHP
 - **[PHPCPD][phpcpd]**: Copy/Paste Detector
 - **[PHPLOC][phploc]**: Quickly measure the size of a PHP project
-- **[PhpMetrics][phpmetrics]**: A static analysis tool for PHP
 - **[PHPMD][phpmd]**: PHP Mess Detector
+- **[PhpMetrics][phpmetrics]**: A static analysis tool for PHP
 - **[SensioLabs Security Checker][security-checker]**: Checks for dependencies with known security vulnerabilities
 
 ### Test Related
 
 - **[Behat][behat]**: BDD framework for PHP
 - **[Codeception][codeception]**: Modern full-stack testing framework for PHP
+- **[Humbug][humbug]**: Humbug is a Mutation Testing framework for PHP
 - **[Mink][mink]**: PHP 5.3+ web browser emulator abstraction
 - **[ParaTest][paratest]**: Parallel testing for PHPUnit
 - **[PHPUnit][phpunit]**: Testing framework for PHP
@@ -50,8 +51,10 @@ Other packages that you'll get:
 
 - **[Behat Mink][behat-mink]**: Mink extension for Behat
 - **[Composer Versions Check][versions-check]**: Checks if packages are up to date to last major versions after update
+- **[Deployer][deployer]**: Deployment tool for PHP
 - **[Mink Goutte Driver][mink-goutte-driver]**: Goutte driver for Mink framework
 - **[Mink Selenium2 Driver][mink-selenium2-driver]**: Selenium2 (WebDriver) driver for Mink framework
+- **[Phing][phing]**: Phing is a PHP project build system or build tool based on ​Apache Ant
 - **[PHP_CodeSniffer Composer Installer][phpcs-composer-installer]**: For installing PHP_CodeSniffer coding standards
 - **[PHPCompatibility][phpcompatibility]**: PHP Compatibility checks for PHP_CodeSniffer
 - **[Prestissimo][prestissimo]**: Composer parallel install plugin
@@ -203,55 +206,54 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[project-stage-shield]: https://img.shields.io/badge/Project%20Stage-Development-yellowgreen.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2017.svg
+[apigen]: http://www.apigen.org
 [awesome-shield]: https://img.shields.io/badge/awesome%3F-yes-brightgreen.svg
-[license-shield]: https://img.shields.io/github/license/dealerdirect/php-qa-tools.svg
-[travis-shield]: https://img.shields.io/travis/DealerDirect/php-qa-tools.svg
-[travis]: https://travis-ci.org/DealerDirect/php-qa-tools
-[versioneye-shield]: https://www.versioneye.com/user/projects/580939a4d65a77002f5eab70/badge.svg
-[versioneye]: https://www.versioneye.com/user/projects/580939a4d65a77002f5eab70
-[packagist-shield]: https://img.shields.io/packagist/dt/dealerdirect/qa-tools.svg
-[packagist]: https://packagist.org/packages/dealerdirect/qa-tools
-[packagist-version-shield]: https://img.shields.io/packagist/v/dealerdirect/qa-tools.svg
-[packagist-version]: https://packagist.org/packages/dealerdirect/qa-tools
-
+[behat-mink]: https://github.com/Behat/MinkExtension
 [behat]: http://behat.org
 [codeception]: http://codeception.com
+[contributors]: https://github.com/dealerdirect/php-qa-tools/graphs/contributors
+[deployer]: https://deployer.org/
+[frenck]: https://github.com/frenck
+[get-in-touch]: http://workingatdealerdirect.eu/open-sollicitatie/
 [grumphp]: https://github.com/phpro/grumphp
+[humbug]: https://github.com/padraic/humbug
 [json-lint]: https://github.com/Seldaek/jsonlint
+[license-shield]: https://img.shields.io/github/license/dealerdirect/php-qa-tools.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2017.svg
+[mink-goutte-driver]: https://github.com/minkphp/MinkGoutteDriver
+[mink-selenium2-driver]: https://github.com/minkphp/MinkSelenium2Driver
 [mink]: http://mink.behat.org
+[mockery]: https://github.com/padraic/mockery
+[packagist-shield]: https://img.shields.io/packagist/dt/dealerdirect/qa-tools.svg
+[packagist-version-shield]: https://img.shields.io/packagist/v/dealerdirect/qa-tools.svg
+[packagist-version]: https://packagist.org/packages/dealerdirect/qa-tools
+[packagist]: https://packagist.org/packages/dealerdirect/qa-tools
 [paratest]: https://github.com/brianium/paratest
-[phpcs-fixer]: http://cs.sensiolabs.org
-[php-parallel-lint]: https://github.com/JakubOnderka/PHP-Parallel-Lint
-[phpcs]: https://github.com/squizlabs/PHP_CodeSniffer
 [pdepend]: https://github.com/pdepend/pdepend
+[phing]:https://www.phing.info/
+[php-codebrowser]: https://github.com/mayflower/PHP_CodeBrowser
+[php-parallel-lint]: https://github.com/JakubOnderka/PHP-Parallel-Lint
+[phpcompatibility]: https://github.com/wimg/PHPCompatibility
+[phpcov]: https://github.com/sebastianbergmann/phpcov
 [phpcpd]: https://github.com/sebastianbergmann/phpcpd
+[phpcs-composer-installer]: https://github.com/DealerDirect/phpcodesniffer-composer-installer
+[phpcs-fixer]: http://cs.sensiolabs.org
+[phpcs]: https://github.com/squizlabs/PHP_CodeSniffer
+[phpdoc]: https://www.phpdoc.org
+[phpdox]: http://phpdox.de
 [phploc]: https://github.com/sebastianbergmann/phploc
 [phpmd]: https://phpmd.org
 [phpmetrics]: http://www.phpmetrics.org
 [phpunit]: https://phpunit.de
+[prestissimo]: https://github.com/hirak/prestissimo
+[project-stage-shield]: https://img.shields.io/badge/Project%20Stage-Development-yellowgreen.svg
+[sami]: https://github.com/FriendsOfPHP/sami
 [security-checker]: https://security.sensiolabs.org
 [tombstone-analyzer]: https://github.com/scheb/tombstone-analyzer
-
-[behat-mink]: https://github.com/Behat/MinkExtension
-[versions-check]: https://github.com/Soullivaneuh/composer-versions-check
-[mink-goutte-driver]: https://github.com/minkphp/MinkGoutteDriver
-[mink-selenium2-driver]: https://github.com/minkphp/MinkSelenium2Driver
-[phpcs-composer-installer]: https://github.com/DealerDirect/phpcodesniffer-composer-installer
-[phpcompatibility]: https://github.com/wimg/PHPCompatibility
-[prestissimo]: https://github.com/hirak/prestissimo
-
-[apigen]: http://www.apigen.org
-[mockery]: https://github.com/padraic/mockery
-[php-codebrowser]: https://github.com/mayflower/PHP_CodeBrowser
-[phpcov]: https://github.com/sebastianbergmann/phpcov
-[phpdoc]: https://www.phpdoc.org
-[phpdox]: http://phpdox.de
-[sami]: https://github.com/FriendsOfPHP/sami
-
-[frenck]: https://github.com/frenck
-[contributors]: https://github.com/dealerdirect/php-qa-tools/graphs/contributors
+[travis-shield]: https://img.shields.io/travis/DealerDirect/php-qa-tools.svg
+[travis]: https://travis-ci.org/DealerDirect/php-qa-tools
 [vacancies]: http://workingatdealerdirect.eu/?post_type=vacancy&s=&department=99
-[get-in-touch]: http://workingatdealerdirect.eu/open-sollicitatie/
+[versioneye-shield]: https://www.versioneye.com/user/projects/580939a4d65a77002f5eab70/badge.svg
+[versioneye]: https://www.versioneye.com/user/projects/580939a4d65a77002f5eab70
+[versions-check]: https://github.com/Soullivaneuh/composer-versions-check
 [workingatdealerdirecteu]: http://www.workingatdealerdirect.eu

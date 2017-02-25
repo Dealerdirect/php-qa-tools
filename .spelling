@@ -24,6 +24,7 @@ ApiGen
 Behat
 codebase
 Codeception
+Deployer
 devops
 frontend
 Githooks
@@ -34,6 +35,7 @@ Linters
 metapackage
 Nijhof
 ParaTest
+Phing
 PHPCompatibility
 phpcov
 phpDocumentor
