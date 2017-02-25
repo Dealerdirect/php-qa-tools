@@ -36,7 +36,6 @@
     "hirak/prestissimo": "^0.3",
     "humbug/humbug": "~1.0@dev",
     "jakub-onderka/php-parallel-lint": ">=0.9.1,<1.0.0",
-    "ocramius/package-versions": "^1.1.2",
     "pdepend/pdepend": "^2.2.0",
     "phploc/phploc": "^3.0.1",
     "phpmd/phpmd": "^2.2.0",
