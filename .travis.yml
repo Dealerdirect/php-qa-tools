@@ -18,7 +18,7 @@ cache:
 
 install:
     - if ! shellcheck --version ; then
-        curl -sSL "${SHELLCHECK_URL}" | tar -C "${HOME}/bin" -xjf - ;
+        curl -sSL "${SHELLCHECK_URL}" | tar --exclude 'SHA256SUMS' --strip-components=1 -C "${HOME}/bin" -xjf -;
       fi
     - ls -la "${HOME}/bin"
     - shellcheck --version
