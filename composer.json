@@ -37,6 +37,7 @@
     "humbug/humbug": "~1.0@dev",
     "jakub-onderka/php-parallel-lint": ">=0.9.1,<1.0.0",
     "pdepend/pdepend": "^2.2.0",
+    "phing/phing": "^2.0.0",
     "phploc/phploc": "^3.0.1",
     "phpmd/phpmd": "^2.2.0",
     "phpmetrics/phpmetrics": "^2.0.0",
