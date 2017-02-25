@@ -16,14 +16,20 @@ cache:
   directories:
     - "${HOME}/bin"
     - "${HOME}/.composer/cache/files"
+    - "${HOME}/.npm"
+    - "${HOME}/.yarn-cache"
+
 before_install:
   - gpg --keyserver hkp://keys.gnupg.net --recv-keys C4133165DF5EB4BAEABDADCACF1E7823C5339B59
+  - npm set loglevel error
+  - npm set progress false
 
 install:
   - if ! shellcheck --version ; then
       curl -sSL "${SHELLCHECK_URL}" | tar --exclude 'SHA256SUMS' --strip-components=1 -C "${HOME}/bin" -xjf -;
     fi
   - shellcheck --version
+  - npm install -g yarn
 
 script:
   - gpg --verify ./bin/install.sh.sig
@@ -31,8 +37,8 @@ script:
   - composer self-update || true
   - composer validate
   - composer install --no-progress --no-suggest
-  - npm install
-  - npm run test
+  - yarn install --no-progress
+  - yarn run test
   - ./vendor/bin/behat --version
   - ./vendor/bin/codecept --version
   - ./vendor/bin/composer -V
