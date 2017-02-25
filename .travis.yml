@@ -36,7 +36,7 @@ install:
 
 script:
   - find . -type f -name "*.yml" -print0 | xargs -0 -n1 yamllint
-  - find . -type f -name "*.json" -print0 | xargs -0 -n1 jsonlint -q 
+  - find . -type f -name "*.json" -print0 | xargs -0 -n1 jsonlint -q
   - gpg --verify ./bin/install.sh.sig
   - shellcheck ./bin/install.sh
   - composer validate
