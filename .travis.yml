@@ -16,10 +16,11 @@ cache:
   directories:
   - "${HOME}/bin"
 
-before_install:
+install:
     - if ! shellcheck --version ; then
         curl -sSL "${SHELLCHECK_URL}" | tar -C "${HOME}/bin" -xjf - ;
       fi
+    - ls -la "${HOME}/bin"
     - shellcheck --version
     - gpg --keyserver hkp://keys.gnupg.net --recv-keys C4133165DF5EB4BAEABDADCACF1E7823C5339B59
 
