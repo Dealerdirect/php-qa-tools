@@ -6,43 +6,43 @@ sublicense
 behaviour
 
 - ./.github/PULL_REQUEST_TEMPLATE.md
-Github
+GitHub
 
 - ./CONTRIBUTING.md
 dealerdirect.nl.
+http
 opensource
 sexualized
-http
 
  - ./README.md
-Linters
-_CodeSniffer
-GrumPHP
-Githooks
-_Depend
-PhpMetrics
-SensioLabs
-Behat
-Codeception
-ParaTest
-PHPUnit
-Goutte
-Selenium2
-WebDriver
-PHPCompatibility
-ApiGen
 _CodeBrowser
-phpcov
-frontend
 _CodeCoverage
+_CodeSniffer
+_Depend
+_eyes
+ApiGen
+Behat
+codebase
+Codeception
+devops
+frontend
+Githooks
+Goutte
+GrumPHP
+https
+Linters
+metapackage
+Nijhof
+ParaTest
+PHPCompatibility
+phpcov
 phpDocumentor
 phpDox
+PhpMetrics
+PHPUnit
 Sami
-metapackage
-codebase
+Selenium2
+SensioLabs
 versioning
-https
-_eyes
-Nijhof
-devops
+WebDriver
 workingatdealerdirect.eu
