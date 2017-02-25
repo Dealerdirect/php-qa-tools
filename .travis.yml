@@ -51,5 +51,5 @@ script:
   - ./vendor/bin/phpmetrics --version
   - ./vendor/bin/phpunit --version
   - ./vendor/bin/security-checker --version
-  - ./vendor/bin/security-checker security:check composer.lock
   - ./vendor/bin/tombstone --version
+  - ./vendor/bin/security-checker security:check composer.lock
