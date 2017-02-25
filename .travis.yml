@@ -14,7 +14,8 @@ env:
 
 cache:
   directories:
-  - "${HOME}/bin"
+    - "${HOME}/bin"
+    - "${HOME}/.composer/cache/files"
 before_install:
   - gpg --keyserver hkp://keys.gnupg.net --recv-keys C4133165DF5EB4BAEABDADCACF1E7823C5339B59
 
@@ -29,7 +30,7 @@ script:
   - shellcheck ./bin/install.sh
   - composer self-update || true
   - composer validate
-  - composer install
+  - composer install --no-progress --no-suggest
   - npm install
   - npm run test
   - ./vendor/bin/behat --version
