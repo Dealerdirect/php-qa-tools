@@ -8,9 +8,14 @@ php:
   - 5.6
 
 before_install:
-    - sudo apt-add-repository "deb http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse"
+before_install:
     - sudo apt-get -qq update
-    - sudo apt-get -t trusty-backports install shellcheck
+    - sudo apt-get install -y cabal-install
+    - cabal update
+    - cd shellcheck
+    - cabal install
+    - cd ..
+    - export PATH="$HOME/.cabal/bin:$PATH"
     - gpg --keyserver hkp://keys.gnupg.net --recv-keys C4133165DF5EB4BAEABDADCACF1E7823C5339B59
 
 script:
