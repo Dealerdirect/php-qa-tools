@@ -25,16 +25,19 @@ before_install:
   - npm set progress false
 
 install:
+  - pip install yamllint
   - if ! shellcheck --version ; then
       curl -sSL "${SHELLCHECK_URL}" | tar --exclude 'SHA256SUMS' --strip-components=1 -C "${HOME}/bin" -xjf -;
     fi
   - shellcheck --version
   - npm install -g yarn
+  - npm install -g jsonlint
 
 script:
+  - find . -type f -name "*.yml" -print0 | xargs -0 -n1 yamllint
+  - find . -type f -name "*.json" -print0 | xargs -0 -n1 jsonlint -c -q
   - gpg --verify ./bin/install.sh.sig
   - shellcheck ./bin/install.sh
-  - composer self-update || true
   - composer validate
   - composer install --no-progress --no-suggest
   - yarn install --no-progress
