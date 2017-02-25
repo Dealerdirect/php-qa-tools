@@ -14,6 +14,7 @@ before_install:
     - cabal update
     - cd shellcheck
     - cabal install
+    - git clone https://github.com/koalaman/shellcheck.git
     - cd ..
     - export PATH="$HOME/.cabal/bin:$PATH"
     - gpg --keyserver hkp://keys.gnupg.net --recv-keys C4133165DF5EB4BAEABDADCACF1E7823C5339B59
