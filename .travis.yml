@@ -1,27 +1,44 @@
 language: php
+dist: trusty
+sudo: required
 
 php:
   - 7.1
   - 7.0
   - 5.6
 
+before_install:
+    - sudo apt-add-repository "deb http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse"
+    - sudo apt-get -qq update
+    - sudo apt-get -t trusty-backports install shellcheck
+    - gpg --keyserver hkp://keys.gnupg.net --recv-keys C4133165DF5EB4BAEABDADCACF1E7823C5339B59
+
 script:
+  - gpg --verify ./bin/install.sh.sig
+  - shellcheck ./bin/install.sh
   - composer self-update || true
   - composer validate
   - composer install
+  - npm install
+  - npm run test
   - ./vendor/bin/behat --version
   - ./vendor/bin/codecept --version
+  - ./vendor/bin/composer -V
+  - ./vendor/bin/dep -V
   - ./vendor/bin/grumphp --version
   - ./vendor/bin/jsonlint -h
-  - ./vendor/bin/paratest --version
-  - ./vendor/bin/php-cs-fixer --version
   - ./vendor/bin/parallel-lint -h
-  - ./vendor/bin/phpcs --version
+  - ./vendor/bin/paratest --version
   - ./vendor/bin/pdepend --version
+  - ./vendor/bin/phing -v
+  - ./vendor/bin/php-cs-fixer --version
+  - ./vendor/bin/phpcbf --version
   - ./vendor/bin/phpcpd --version
+  - ./vendor/bin/phpcs --version
   - ./vendor/bin/phploc --version
-  - ./vendor/bin/phpmetrics --version
   - ./vendor/bin/phpmd --version
+  - ./vendor/bin/phpmetrics --version
   - ./vendor/bin/phpunit --version
   - ./vendor/bin/security-checker --version
   - ./vendor/bin/security-checker security:check composer.lock
+  - ./vendor/bin/tombstone --version
