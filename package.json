@@ -24,9 +24,9 @@
     "lint:alex": "alex .",
     "lint:remark": "remark -f . --ignore-path '.gitignore'",
     "lint:spellcheck": "find . -type f -name '*.md' -not -path './CHANGELOG.md' -not -path './node_modules/*' -not -path './vendor/*' -print0 | xargs -0 -n1 mdspell --report --en-us --ignore-numbers --ignore-acronyms",
-    "lint:spellcheck-interactive": "find . -type f -name '*.md' -not -path './node_modules/*' --not-path '.v/endor/*' -print0 | xargs -0 -n1 mdspell --en-us --ignore-numbers --ignore-acronyms",
-    "lint": "npm run lint:alex && npm run lint:remark && npm run lint:spellcheck-interactive",
-    "test": "npm run lint:alex && npm run lint:remark && npm run lint:spellcheck"
+    "lint:spellcheck-interactive": "find . -type f -name '*.md' -not -path './node_modules/*' -not -path './vendor/*' -print0 | xargs -0 -n1 mdspell --en-us --ignore-numbers --ignore-acronyms",
+    "lint": "yarn run lint:alex && yarn run lint:remark && yarn run lint:spellcheck-interactive",
+    "test": "yarn run lint:alex && yarn run lint:remark && yarn run lint:spellcheck"
   },
   "repository": {
     "type": "git",
