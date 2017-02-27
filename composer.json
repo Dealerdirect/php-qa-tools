@@ -34,7 +34,6 @@
     "frenck/php-compatibility": "^7.0.0",
     "friendsofphp/php-cs-fixer": "^2.0.0",
     "hirak/prestissimo": "^0.3",
-    "humbug/humbug": "~1.0@dev",
     "jakub-onderka/php-parallel-lint": ">=0.9.1,<1.0.0",
     "pdepend/pdepend": "^2.2.0",
     "phing/phing": "^2.0.0",
