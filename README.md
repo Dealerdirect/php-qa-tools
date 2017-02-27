@@ -40,7 +40,6 @@ You'll get the following tools by depending on this package:
 
 - **[Behat][behat]**: BDD framework for PHP
 - **[Codeception][codeception]**: Modern full-stack testing framework for PHP
-- **[Humbug][humbug]**: Humbug is a Mutation Testing framework for PHP
 - **[Mink][mink]**: PHP 5.3+ web browser emulator abstraction
 - **[ParaTest][paratest]**: Parallel testing for PHPUnit
 - **[PHPUnit][phpunit]**: Testing framework for PHP
@@ -216,7 +215,6 @@ THE SOFTWARE.
 [frenck]: https://github.com/frenck
 [get-in-touch]: http://workingatdealerdirect.eu/open-sollicitatie/
 [grumphp]: https://github.com/phpro/grumphp
-[humbug]: https://github.com/padraic/humbug
 [json-lint]: https://github.com/Seldaek/jsonlint
 [license-shield]: https://img.shields.io/github/license/dealerdirect/php-qa-tools.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2017.svg
