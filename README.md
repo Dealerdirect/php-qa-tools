@@ -41,6 +41,7 @@ You'll get the following tools by depending on this package:
 - **[Behat][behat]**: BDD framework for PHP
 - **[Codeception][codeception]**: Modern full-stack testing framework for PHP
 - **[Mink][mink]**: PHP 5.3+ web browser emulator abstraction
+- **[Ocular][ocular]**: CLI for uploading external code coverage data to Scrutinizer
 - **[ParaTest][paratest]**: Parallel testing for PHPUnit
 - **[PHPUnit][phpunit]**: Testing framework for PHP
 
@@ -212,8 +213,8 @@ THE SOFTWARE.
 [behat]: http://behat.org
 [codeception]: http://codeception.com
 [contributors]: https://github.com/dealerdirect/php-qa-tools/graphs/contributors
-[deployer]: https://deployer.org
 [deployer-recipes]: https://github.com/deployphp/recipes
+[deployer]: https://deployer.org
 [frenck]: https://github.com/frenck
 [get-in-touch]: http://workingatdealerdirect.eu/open-sollicitatie/
 [grumphp]: https://github.com/phpro/grumphp
@@ -224,6 +225,7 @@ THE SOFTWARE.
 [mink-selenium2-driver]: https://github.com/minkphp/MinkSelenium2Driver
 [mink]: http://mink.behat.org
 [mockery]: https://github.com/padraic/mockery
+[ocular]: https://github.com/scrutinizer-ci/ocular
 [packagist-shield]: https://img.shields.io/packagist/dt/dealerdirect/qa-tools.svg
 [packagist-version-shield]: https://img.shields.io/packagist/v/dealerdirect/qa-tools.svg
 [packagist-version]: https://packagist.org/packages/dealerdirect/qa-tools
