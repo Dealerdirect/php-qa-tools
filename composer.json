@@ -34,7 +34,6 @@
     "deployer/recipes": "^4.0.0",
     "frenck/php-compatibility": "^7.0.0",
     "friendsofphp/php-cs-fixer": "^2.0.0",
-    "herzult/php-ssh": "^1.1",
     "hirak/prestissimo": "^0.3",
     "jakub-onderka/php-parallel-lint": ">=0.9.1,<1.0.0",
     "pdepend/pdepend": "^2.2.0",

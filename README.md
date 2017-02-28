@@ -52,7 +52,6 @@ Other packages that you'll get:
 - **[Composer Versions Check][versions-check]**: Checks if packages are up to date to last major versions after update
 - **[Deployer][deployer]**: Deployment tool for PHP
 - **[Deployer Recipes][deployer-recipes]**: Third party recipes to integrate with Deployer
-- **[PHP SSH][phpssh]**: An experimental object oriented SSH api in PHP
 - **[Mink Goutte Driver][mink-goutte-driver]**: Goutte driver for Mink framework
 - **[Mink Selenium2 Driver][mink-selenium2-driver]**: Selenium2 (WebDriver) driver for Mink framework
 - **[Phing][phing]**: Phing is a PHP project build system or build tool based on ​Apache Ant
@@ -245,7 +244,6 @@ THE SOFTWARE.
 [phploc]: https://github.com/sebastianbergmann/phploc
 [phpmd]: https://phpmd.org
 [phpmetrics]: http://www.phpmetrics.org
-[phpssh]: https://github.com/Herzult/php-ssh
 [phpunit]: https://phpunit.de
 [prestissimo]: https://github.com/hirak/prestissimo
 [project-stage-shield]: https://img.shields.io/badge/Project%20Stage-Development-yellowgreen.svg
