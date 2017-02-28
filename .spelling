@@ -20,6 +20,7 @@ _CodeCoverage
 _CodeSniffer
 _Depend
 _eyes
+api
 ApiGen
 Behat
 codebase
