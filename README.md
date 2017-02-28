@@ -51,6 +51,8 @@ Other packages that you'll get:
 - **[Behat Mink][behat-mink]**: Mink extension for Behat
 - **[Composer Versions Check][versions-check]**: Checks if packages are up to date to last major versions after update
 - **[Deployer][deployer]**: Deployment tool for PHP
+- **[Deployer Recipes][deployer-recipes]**: Third party recipes to integrate with Deployer
+- **[PHP SSH][phpssh]**: An experimental object oriented SSH api in PHP
 - **[Mink Goutte Driver][mink-goutte-driver]**: Goutte driver for Mink framework
 - **[Mink Selenium2 Driver][mink-selenium2-driver]**: Selenium2 (WebDriver) driver for Mink framework
 - **[Phing][phing]**: Phing is a PHP project build system or build tool based on ​Apache Ant
@@ -211,7 +213,8 @@ THE SOFTWARE.
 [behat]: http://behat.org
 [codeception]: http://codeception.com
 [contributors]: https://github.com/dealerdirect/php-qa-tools/graphs/contributors
-[deployer]: https://deployer.org/
+[deployer]: https://deployer.org
+[deployer-recipes]: https://github.com/deployphp/recipes
 [frenck]: https://github.com/frenck
 [get-in-touch]: http://workingatdealerdirect.eu/open-sollicitatie/
 [grumphp]: https://github.com/phpro/grumphp
@@ -242,6 +245,7 @@ THE SOFTWARE.
 [phploc]: https://github.com/sebastianbergmann/phploc
 [phpmd]: https://phpmd.org
 [phpmetrics]: http://www.phpmetrics.org
+[phpssh]: https://github.com/Herzult/php-ssh
 [phpunit]: https://phpunit.de
 [prestissimo]: https://github.com/hirak/prestissimo
 [project-stage-shield]: https://img.shields.io/badge/Project%20Stage-Development-yellowgreen.svg
