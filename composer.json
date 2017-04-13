@@ -41,7 +41,7 @@
     "phploc/phploc": "^3.0.1",
     "phpmd/phpmd": "^2.2.0",
     "phpmetrics/phpmetrics": "^2.0.0",
-    "phpro/grumphp": ">=0.11.0,<1.0.0",
+    "phpro/grumphp": ">=0.11.0,<1.0.0,!=0.11.4",
     "phpunit/phpunit": "^5.5.0",
     "robmorgan/phinx": "^0.8.0",
     "scheb/tombstone-analyzer": "^0.3.0",
