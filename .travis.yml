@@ -53,6 +53,7 @@ script:
   - ./vendor/bin/paratest --version
   - ./vendor/bin/pdepend --version
   - ./vendor/bin/phing -v
+  - ./vendor/bin/phinx --version
   - ./vendor/bin/php-cs-fixer --version
   - ./vendor/bin/phpcbf --version
   - ./vendor/bin/phpcpd --version
@@ -63,4 +64,3 @@ script:
   - ./vendor/bin/phpunit --version
   - ./vendor/bin/security-checker --version
   - ./vendor/bin/tombstone --version
-  - ./vendor/bin/security-checker security:check composer.lock
