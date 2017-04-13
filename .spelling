@@ -37,6 +37,7 @@ metapackage
 Nijhof
 ParaTest
 Phing
+Phinx
 PHPCompatibility
 phpcov
 phpDocumentor
