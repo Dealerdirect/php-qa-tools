@@ -29,7 +29,7 @@
     "behat/mink-goutte-driver": "^1.2.0",
     "brianium/paratest": ">=0.14.0,<1.0.0",
     "codeception/codeception": "^2.2.0",
-    "dealerdirect/phpcodesniffer-composer-installer": "^0.3.0",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
     "deployer/deployer": "^4.0.0",
     "deployer/recipes": "^4.0.0",
     "frenck/php-compatibility": "^7.0.0",
