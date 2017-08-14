@@ -32,7 +32,7 @@
     "dealerdirect/phpcodesniffer-composer-installer": "^0.4.0",
     "deployer/deployer": "^4.0.0",
     "deployer/recipes": "^4.0.0",
-    "frenck/php-compatibility": "^7.0.0",
+    "wimg/php-compatibility": "^8.0.0",
     "friendsofphp/php-cs-fixer": "^2.0.0",
     "hirak/prestissimo": "^0.3",
     "jakub-onderka/php-parallel-lint": ">=0.9.1,<1.0.0",
@@ -50,7 +50,7 @@
     "seld/jsonlint": "^1.4.0",
     "sensiolabs/security-checker": "^4.0",
     "sllh/composer-versions-check": "^2.0.0",
-    "squizlabs/php_codesniffer": "^2.5"
+    "squizlabs/php_codesniffer": "^3.0.2"
   },
   "suggest": {
     "apigen/apigen": "Smart and Readable Documentation for your PHP project.",
