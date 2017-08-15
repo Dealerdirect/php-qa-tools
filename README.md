@@ -38,9 +38,7 @@ You'll get the following tools by depending on this package:
 
 ### Test Related
 
-- **[Behat][behat]**: BDD framework for PHP
 - **[Codeception][codeception]**: Modern full-stack testing framework for PHP
-- **[Mink][mink]**: PHP 5.3+ web browser emulator abstraction
 - **[Ocular][ocular]**: CLI for uploading external code coverage data to Scrutinizer
 - **[ParaTest][paratest]**: Parallel testing for PHPUnit
 - **[PHPUnit][phpunit]**: Testing framework for PHP
@@ -49,12 +47,9 @@ You'll get the following tools by depending on this package:
 
 Other packages that you'll get:
 
-- **[Behat Mink][behat-mink]**: Mink extension for Behat
 - **[Composer Versions Check][versions-check]**: Checks if packages are up to date to last major versions after update
 - **[Deployer][deployer]**: Deployment tool for PHP
 - **[Deployer Recipes][deployer-recipes]**: Third party recipes to integrate with Deployer
-- **[Mink Goutte Driver][mink-goutte-driver]**: Goutte driver for Mink framework
-- **[Mink Selenium2 Driver][mink-selenium2-driver]**: Selenium2 (WebDriver) driver for Mink framework
 - **[Phing][phing]**: Phing is a PHP project build system or build tool based on ​Apache Ant
 - **[Phinx][phinx]**: Phinx makes it ridiculously easy to manage the database migrations for your PHP app
 - **[PHP_CodeSniffer Composer Installer][phpcs-composer-installer]**: For installing PHP_CodeSniffer coding standards
@@ -66,6 +61,7 @@ Other packages that you'll get:
 
 The following packages are suggested:
 
+- **[Behat][behat]**: Scenario-oriented BDD framework
 - **[ApiGen][apigen]**: Smart and Readable Documentation for your PHP project
 - **[Mockery][mockery]**: A simple yet flexible PHP mock object framework
 - **[PHP_CodeBrowser][php-codebrowser]**: A code browser that augments the code with information from various QA tools
@@ -182,7 +178,7 @@ Then please be sure to check out [our vacancies][vacancies].
 
 Did not find a matching vacancy? Just [get in touch][get-in-touch]!
 
-[workingatdealerdirect.eu][workingatdealerdirecteu]
+[dealerdirect.com][dealerdirectcom]
 
 ## License
 
@@ -210,21 +206,18 @@ THE SOFTWARE.
 
 [apigen]: http://www.apigen.org
 [awesome-shield]: https://img.shields.io/badge/awesome%3F-yes-brightgreen.svg
-[behat-mink]: https://github.com/Behat/MinkExtension
 [behat]: http://behat.org
 [codeception]: http://codeception.com
 [contributors]: https://github.com/dealerdirect/php-qa-tools/graphs/contributors
+[dealerdirectcom]: http://www.dealerdirect.com/en
 [deployer-recipes]: https://github.com/deployphp/recipes
 [deployer]: https://deployer.org
 [frenck]: https://github.com/frenck
-[get-in-touch]: http://workingatdealerdirect.eu/open-sollicitatie/
+[get-in-touch]: https://www.dealerdirect.com/en/contact
 [grumphp]: https://github.com/phpro/grumphp
 [json-lint]: https://github.com/Seldaek/jsonlint
 [license-shield]: https://img.shields.io/github/license/dealerdirect/php-qa-tools.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2017.svg
-[mink-goutte-driver]: https://github.com/minkphp/MinkGoutteDriver
-[mink-selenium2-driver]: https://github.com/minkphp/MinkSelenium2Driver
-[mink]: http://mink.behat.org
 [mockery]: https://github.com/padraic/mockery
 [ocular]: https://github.com/scrutinizer-ci/ocular
 [packagist-shield]: https://img.shields.io/packagist/dt/dealerdirect/qa-tools.svg
@@ -256,8 +249,7 @@ THE SOFTWARE.
 [tombstone-analyzer]: https://github.com/scheb/tombstone-analyzer
 [travis-shield]: https://img.shields.io/travis/DealerDirect/php-qa-tools.svg
 [travis]: https://travis-ci.org/DealerDirect/php-qa-tools
-[vacancies]: http://workingatdealerdirect.eu/?post_type=vacancy&s=&department=99
+[vacancies]: https://www.dealerdirect.com/en/vacancies
 [versioneye-shield]: https://www.versioneye.com/user/projects/580939a4d65a77002f5eab70/badge.svg
 [versioneye]: https://www.versioneye.com/user/projects/580939a4d65a77002f5eab70
 [versions-check]: https://github.com/Soullivaneuh/composer-versions-check
-[workingatdealerdirecteu]: http://www.workingatdealerdirect.eu
