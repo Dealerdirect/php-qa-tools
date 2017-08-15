@@ -43,7 +43,6 @@ script:
   - travis_wait 45 composer install --no-progress --no-suggest
   - yarn install --no-progress
   - yarn run test
-  - ./vendor/bin/behat --version
   - ./vendor/bin/codecept --version
   - ./vendor/bin/composer -V
   - ./vendor/bin/dep -V
