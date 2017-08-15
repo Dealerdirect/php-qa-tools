@@ -40,7 +40,7 @@ script:
   - gpg --verify ./bin/install.sh.sig
   - shellcheck ./bin/install.sh
   - composer validate
-  - travis_wait composer install --no-progress --no-suggest
+  - travis_wait 45 composer install --no-progress --no-suggest
   - yarn install --no-progress
   - yarn run test
   - ./vendor/bin/behat --version
