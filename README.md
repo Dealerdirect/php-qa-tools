@@ -39,7 +39,6 @@ You'll get the following tools by depending on this package:
 ### Test Related
 
 - **[Codeception][codeception]**: Modern full-stack testing framework for PHP
-- **[Ocular][ocular]**: CLI for uploading external code coverage data to Scrutinizer
 - **[ParaTest][paratest]**: Parallel testing for PHPUnit
 - **[PHPUnit][phpunit]**: Testing framework for PHP
 
