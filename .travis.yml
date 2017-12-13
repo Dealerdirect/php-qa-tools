@@ -51,7 +51,6 @@ script:
   - ./vendor/bin/parallel-lint -h
   - ./vendor/bin/paratest --version
   - ./vendor/bin/pdepend --version
-  - ./vendor/bin/phing -v
   - ./vendor/bin/phinx --version
   - ./vendor/bin/php-cs-fixer --version
   - ./vendor/bin/phpcbf --version
