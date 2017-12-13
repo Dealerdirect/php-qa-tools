@@ -218,7 +218,6 @@ THE SOFTWARE.
 [license-shield]: https://img.shields.io/github/license/dealerdirect/php-qa-tools.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2017.svg
 [mockery]: https://github.com/padraic/mockery
-[ocular]: https://github.com/scrutinizer-ci/ocular
 [packagist-shield]: https://img.shields.io/packagist/dt/dealerdirect/qa-tools.svg
 [packagist-version-shield]: https://img.shields.io/packagist/v/dealerdirect/qa-tools.svg
 [packagist-version]: https://packagist.org/packages/dealerdirect/qa-tools

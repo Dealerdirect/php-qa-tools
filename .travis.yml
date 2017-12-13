@@ -26,7 +26,7 @@ before_install:
   - npm set progress false
 
 install:
-  - pip install yamllint
+  - sudo pip install yamllint
   - if ! shellcheck --version ; then
       curl -sSL "${SHELLCHECK_URL}" | tar --exclude 'SHA256SUMS' --strip-components=1 -C "${HOME}/bin" -xjf -;
     fi
