@@ -39,7 +39,6 @@ You'll get the following tools by depending on this package:
 ### Test Related
 
 - **[Codeception][codeception]**: Modern full-stack testing framework for PHP
-- **[Ocular][ocular]**: CLI for uploading external code coverage data to Scrutinizer
 - **[ParaTest][paratest]**: Parallel testing for PHPUnit
 - **[PHPUnit][phpunit]**: Testing framework for PHP
 
@@ -50,7 +49,6 @@ Other packages that you'll get:
 - **[Composer Versions Check][versions-check]**: Checks if packages are up to date to last major versions after update
 - **[Deployer][deployer]**: Deployment tool for PHP
 - **[Deployer Recipes][deployer-recipes]**: Third party recipes to integrate with Deployer
-- **[Phing][phing]**: Phing is a PHP project build system or build tool based on ​Apache Ant
 - **[Phinx][phinx]**: Phinx makes it ridiculously easy to manage the database migrations for your PHP app
 - **[PHP_CodeSniffer Composer Installer][phpcs-composer-installer]**: For installing PHP_CodeSniffer coding standards
 - **[PHPCompatibility][phpcompatibility]**: PHP Compatibility checks for PHP_CodeSniffer
@@ -219,14 +217,12 @@ THE SOFTWARE.
 [license-shield]: https://img.shields.io/github/license/dealerdirect/php-qa-tools.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2017.svg
 [mockery]: https://github.com/padraic/mockery
-[ocular]: https://github.com/scrutinizer-ci/ocular
 [packagist-shield]: https://img.shields.io/packagist/dt/dealerdirect/qa-tools.svg
 [packagist-version-shield]: https://img.shields.io/packagist/v/dealerdirect/qa-tools.svg
 [packagist-version]: https://packagist.org/packages/dealerdirect/qa-tools
 [packagist]: https://packagist.org/packages/dealerdirect/qa-tools
 [paratest]: https://github.com/brianium/paratest
 [pdepend]: https://github.com/pdepend/pdepend
-[phing]:https://www.phing.info/
 [phinx]: https://phinx.org
 [php-codebrowser]: https://github.com/mayflower/PHP_CodeBrowser
 [php-parallel-lint]: https://github.com/JakubOnderka/PHP-Parallel-Lint

@@ -4,6 +4,7 @@ dist: trusty
 sudo: required
 
 php:
+  - 7.2
   - 7.1
   - 7.0
   - 5.6
@@ -26,7 +27,7 @@ before_install:
   - npm set progress false
 
 install:
-  - pip install yamllint
+  - sudo pip install yamllint
   - if ! shellcheck --version ; then
       curl -sSL "${SHELLCHECK_URL}" | tar --exclude 'SHA256SUMS' --strip-components=1 -C "${HOME}/bin" -xjf -;
     fi
@@ -51,7 +52,6 @@ script:
   - ./vendor/bin/parallel-lint -h
   - ./vendor/bin/paratest --version
   - ./vendor/bin/pdepend --version
-  - ./vendor/bin/phing -v
   - ./vendor/bin/phinx --version
   - ./vendor/bin/php-cs-fixer --version
   - ./vendor/bin/phpcbf --version
