@@ -95,7 +95,7 @@ still use the one provided in a project.
 The following script will install a system wide Composer for you, including the QA tools.
 
 ```bash
-bash <(curl -S https://raw.githubusercontent.com/DealerDirect/php-qa-tools/master/bin/install.sh)
+bash <(curl -S https://raw.githubusercontent.com/Dealerdirect/php-qa-tools/master/bin/install.sh)
 ```
 
 That's it. This can be put in any instructions, such as a README or someone's blog, since the logic is in the shell
@@ -105,8 +105,8 @@ releases signature matches the public key of Dealerdirect.
 
 ```bash
 gpg --keyserver hkp://keys.gnupg.net --recv-keys C4133165DF5EB4BAEABDADCACF1E7823C5339B59
-curl -O https://raw.githubusercontent.com/DealerDirect/php-qa-tools/master/bin/install.sh
-curl -O https://raw.githubusercontent.com/DealerDirect/php-qa-tools/master/bin/install.sh.sig
+curl -O https://raw.githubusercontent.com/Dealerdirect/php-qa-tools/master/bin/install.sh
+curl -O https://raw.githubusercontent.com/Dealerdirect/php-qa-tools/master/bin/install.sh.sig
 gpg --verify install.sh.sig
 bash install.sh
 ```
@@ -115,7 +115,7 @@ This is obviously a shell script, if you're really concerned about the argument 
 activities within, you can easily review it before you run it.
 
 ```bash
-curl -O https://raw.githubusercontent.com/DealerDirect/php-qa-tools/master/bin/install.sh
+curl -O https://raw.githubusercontent.com/Dealerdirect/php-qa-tools/master/bin/install.sh
 less install.sh
 bash instal.sh
 ```
@@ -182,7 +182,7 @@ Did not find a matching vacancy? Just [get in touch][get-in-touch]!
 
 The MIT License (MIT)
 
-Copyright (c) 2016-2017 Dealerdirect B.V.
+Copyright (c) 2016-2018 Dealerdirect B.V.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -215,7 +215,7 @@ THE SOFTWARE.
 [grumphp]: https://github.com/phpro/grumphp
 [json-lint]: https://github.com/Seldaek/jsonlint
 [license-shield]: https://img.shields.io/github/license/dealerdirect/php-qa-tools.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2017.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
 [mockery]: https://github.com/padraic/mockery
 [packagist-shield]: https://img.shields.io/packagist/dt/dealerdirect/qa-tools.svg
 [packagist-version-shield]: https://img.shields.io/packagist/v/dealerdirect/qa-tools.svg
@@ -229,7 +229,7 @@ THE SOFTWARE.
 [phpcompatibility]: https://github.com/wimg/PHPCompatibility
 [phpcov]: https://github.com/sebastianbergmann/phpcov
 [phpcpd]: https://github.com/sebastianbergmann/phpcpd
-[phpcs-composer-installer]: https://github.com/DealerDirect/phpcodesniffer-composer-installer
+[phpcs-composer-installer]: https://github.com/Dealerdirect/phpcodesniffer-composer-installer
 [phpcs-fixer]: http://cs.sensiolabs.org
 [phpcs]: https://github.com/squizlabs/PHP_CodeSniffer
 [phpdoc]: https://www.phpdoc.org
@@ -243,8 +243,8 @@ THE SOFTWARE.
 [sami]: https://github.com/FriendsOfPHP/sami
 [security-checker]: https://security.sensiolabs.org
 [tombstone-analyzer]: https://github.com/scheb/tombstone-analyzer
-[travis-shield]: https://img.shields.io/travis/DealerDirect/php-qa-tools.svg
-[travis]: https://travis-ci.org/DealerDirect/php-qa-tools
+[travis-shield]: https://img.shields.io/travis/Dealerdirect/php-qa-tools.svg
+[travis]: https://travis-ci.org/Dealerdirect/php-qa-tools
 [vacancies]: https://www.dealerdirect.com/en/vacancies
 [versioneye-shield]: https://www.versioneye.com/user/projects/580939a4d65a77002f5eab70/badge.svg
 [versioneye]: https://www.versioneye.com/user/projects/580939a4d65a77002f5eab70
