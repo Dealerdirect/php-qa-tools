@@ -6,7 +6,6 @@
 [![License][license-shield]](LICENSE.md)
 
 [![Travis][travis-shield]][travis]
-[![Dependency Status][versioneye-shield]][versioneye]
 [![Latest Version on Packagist][packagist-version-shield]][packagist-version]
 [![Packagist][packagist-shield]][packagist]
 
@@ -246,6 +245,4 @@ THE SOFTWARE.
 [travis-shield]: https://img.shields.io/travis/Dealerdirect/php-qa-tools.svg
 [travis]: https://travis-ci.org/Dealerdirect/php-qa-tools
 [vacancies]: https://www.dealerdirect.com/en/vacancies
-[versioneye-shield]: https://www.versioneye.com/user/projects/580939a4d65a77002f5eab70/badge.svg
-[versioneye]: https://www.versioneye.com/user/projects/580939a4d65a77002f5eab70
 [versions-check]: https://github.com/Soullivaneuh/composer-versions-check
