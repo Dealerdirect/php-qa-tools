@@ -225,7 +225,7 @@ THE SOFTWARE.
 [phinx]: https://phinx.org
 [php-codebrowser]: https://github.com/mayflower/PHP_CodeBrowser
 [php-parallel-lint]: https://github.com/JakubOnderka/PHP-Parallel-Lint
-[phpcompatibility]: https://github.com/wimg/PHPCompatibility
+[phpcompatibility]: https://github.com/PHPCompatibility/PHPCompatibility
 [phpcov]: https://github.com/sebastianbergmann/phpcov
 [phpcpd]: https://github.com/sebastianbergmann/phpcpd
 [phpcs-composer-installer]: https://github.com/Dealerdirect/phpcodesniffer-composer-installer
