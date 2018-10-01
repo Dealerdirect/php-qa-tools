@@ -103,7 +103,7 @@ protecting it from manipulation. We also sign the install with a GPG key, this w
 releases signature matches the public key of Dealerdirect.
 
 ```bash
-gpg --keyserver hkp://keys.gnupg.net --recv-keys C4133165DF5EB4BAEABDADCACF1E7823C5339B59
+gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys C4133165DF5EB4BAEABDADCACF1E7823C5339B59
 curl -O https://raw.githubusercontent.com/Dealerdirect/php-qa-tools/master/bin/install.sh
 curl -O https://raw.githubusercontent.com/Dealerdirect/php-qa-tools/master/bin/install.sh.sig
 gpg --verify install.sh.sig

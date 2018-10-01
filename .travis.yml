@@ -22,7 +22,7 @@ cache:
     - "${HOME}/.yarn-cache"
 
 before_install:
-  - gpg --keyserver hkp://keys.gnupg.net --recv-keys C4133165DF5EB4BAEABDADCACF1E7823C5339B59
+  - gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys C4133165DF5EB4BAEABDADCACF1E7823C5339B59
   - npm set loglevel error
   - npm set progress false
 
