@@ -39,7 +39,7 @@
     "phpmetrics/phpmetrics": "^2.3.2",
     "phpro/grumphp": ">=0.11.0,<1.0.0,!=0.11.4",
     "phpunit/phpunit": "^5.7|^6.5",
-    "robmorgan/phinx": "^0.9",
+    "robmorgan/phinx": "^0.10",
     "scheb/tombstone-analyzer": "^0.3",
     "sebastian/phpcpd": "^3.0",
     "seld/jsonlint": "^1.6",
