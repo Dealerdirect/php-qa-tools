@@ -14,7 +14,7 @@ http
 opensource
 sexualized
 
- - ./README.md
+- ./README.md
 _CodeBrowser
 _CodeCoverage
 _CodeSniffer
@@ -51,3 +51,9 @@ SensioLabs
 versioning
 WebDriver
 workingatdealerdirect.eu
+PHP_CodeSniffer
+PHP_Depend
+PHP_CodeSniffer
+PHP_CodeBrowser
+PHP_CodeCoverage
+heart_eyes
