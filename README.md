@@ -214,7 +214,7 @@ THE SOFTWARE.
 [grumphp]: https://github.com/phpro/grumphp
 [json-lint]: https://github.com/Seldaek/jsonlint
 [license-shield]: https://img.shields.io/github/license/dealerdirect/php-qa-tools.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2019.svg
 [mockery]: https://github.com/padraic/mockery
 [packagist-shield]: https://img.shields.io/packagist/dt/dealerdirect/qa-tools.svg
 [packagist-version-shield]: https://img.shields.io/packagist/v/dealerdirect/qa-tools.svg
