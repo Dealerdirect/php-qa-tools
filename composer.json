@@ -33,7 +33,7 @@
     "hirak/prestissimo": "^0.3",
     "jakub-onderka/php-parallel-lint": ">=0.9.1,<1.0.0",
     "pdepend/pdepend": "^2.5",
-    "phpcompatibility/php-compatibility": "^8.0",
+    "phpcompatibility/php-compatibility": "^9.0",
     "phploc/phploc": "^4.0",
     "phpmd/phpmd": "^2.6.0",
     "phpmetrics/phpmetrics": "^2.3.2",
