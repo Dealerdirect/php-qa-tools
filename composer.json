@@ -30,7 +30,6 @@
     "deployer/deployer": "^4.3",
     "deployer/recipes": "^4.0",
     "friendsofphp/php-cs-fixer": "^2.8",
-    "hirak/prestissimo": "^0.3",
     "jakub-onderka/php-parallel-lint": ">=0.9.1,<1.0.0",
     "pdepend/pdepend": "^2.5",
     "phpcompatibility/php-compatibility": "^8.0",
