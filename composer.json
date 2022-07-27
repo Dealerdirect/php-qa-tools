@@ -27,7 +27,7 @@
     "brianium/paratest": ">=0.14|^1.0",
     "codeception/codeception": "^2.3",
     "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
-    "deployer/deployer": "^4.3",
+    "deployer/deployer": "^7.0",
     "deployer/recipes": "^4.0",
     "friendsofphp/php-cs-fixer": "^2.8",
     "jakub-onderka/php-parallel-lint": ">=0.9.1,<1.0.0",
